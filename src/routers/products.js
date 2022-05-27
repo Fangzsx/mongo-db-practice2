@@ -32,14 +32,13 @@ router.get('/add', (req, res) => {
         stockQuantity : 600,
         description : 'some description'
     });
-    addProduct(product)
-        .then(() => {
-            res.send(product);
-            console.log('added');
-        })
-        .catch((error) => {
-            console.log(error);
-        })
+   addProduct(product)
+       .then(() => {
+           res.send(product);
+       })
+       .catch((error) => {
+           console.log(error);
+       })
 
 })
 
