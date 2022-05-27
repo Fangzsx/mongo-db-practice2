@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const addProduct = require('../src/controller/database/addProduct');
 
 
 //view all products
