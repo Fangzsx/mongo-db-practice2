@@ -1,5 +1,6 @@
 function addProduct(product){
-    product.save();
+    return product.save();
 
 }
+
 module.exports = addProduct
