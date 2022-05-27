@@ -27,9 +27,9 @@ router.get('/find-product', (req, res) => {
 
 router.get('/add', (req, res) => {
     const product = new Product({
-        productName : 'item 4',
-        price : 4000,
-        stockQuantity : 400,
+        productName : 'item 6',
+        price : 6000,
+        stockQuantity : 600,
         description : 'some description'
     });
     addProduct(product)
@@ -41,6 +41,6 @@ router.get('/add', (req, res) => {
             console.log(error);
         })
 
-});
+})
 
 module.exports = router;
